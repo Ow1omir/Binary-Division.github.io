@@ -1,4 +1,6 @@
 # Binary-Division.github.io
 
 Сделал деление без восстановления остатка на JavaScript'те
-![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
+![Делал по этому алгоритму](https://github.com/Ow1omir/Binary-Division.github.io/blob/main/img/firstScreenSht.jpg)
+
+P.S.: Верста ломается на больших и отрицательных числах(( не ругайте
