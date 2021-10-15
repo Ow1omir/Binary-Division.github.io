@@ -3,6 +3,7 @@ body {
     margin: 0px;
     background: #232323;
     font-family: sans-serif;
+    color: #EEEEEE;
 }
 * {
     box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
     max-width: 360px;
     max-height: 640px;
     border: 1px solid #EEEEEE ;
+    color: #EEEEEE;
 }
 
 /* --------- */
@@ -47,9 +49,22 @@ body {
 .btn-conteiner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
+.moreBtn {
+    font-size: 20px;
+    font-weight: normal;
+    border: 2px solid #00ADB5;
+    border-radius: 3px;
+    background: #232323;
+    color: #EEEEEE;
+}
+.moreBtn-active {
+    background: #00ADB5 ;
+    color: #000;
+
+}
 .countBtn {
     width: 150px;
     height: 30px;
@@ -65,25 +80,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #EEEEEE;
     flex-direction: column;
 }
 .result {
     font-size: 25px;
+    max-width: 320px;
 }
 
 /* ----------------- */
-.countBtn:hover {
+button:hover {
     background: #00ADB5 ;
     color: #000;
     transition: 0.29s;
     cursor: pointer;
 }
-.countBtn:active {
+button:active {
     transition: 0.1s;
     transform: scale(0.8);
 }
 input:active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
+}
+
+/* -------------- */
+
+.more-conteiner {
+    display: none;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.display {
+    display: flex;
 }

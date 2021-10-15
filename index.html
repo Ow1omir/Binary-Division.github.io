@@ -11,24 +11,26 @@
     <div class="main-conteiner">
         <div class="values-conteiner">
             <div class="value-input-conteiner">
-                
                 <input class="value-input_item" id="firstNumber" type="text">
             </div>
             <div class="value-input-conteiner">
-                
                 <input class="value-input_item" id="secondNumber" type="text">
             </div>
         </div>
         <div class="btn-conteiner">
+            <button class="moreBtn" id="moreBtn">More</button>
             <button class="countBtn" id="countBtn">Count</button>
         </div>
         <div class="result-conteiner">
             <h1>Answer:</h1>
-            <span class="result" id="resultDisplay"></span>
+            <span class="result" id="resultDisplay">0</span>
+        </div>
+        <hr>
+        <div class="more-conteiner" id="more-conteiner">
+            <span><input id="rangeValue" oninput="moreRangeChanger()" type="range" min="1" max="16"  class="more-range"><span id="rangeValueDisplay">10</span></span> 
+            <span id="more-result" class="result">0</span>
         </div>
     </div>
-    
-
     <script src="./js/script.js"></script>
 </body>
 </html>
