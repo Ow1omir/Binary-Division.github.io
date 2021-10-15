@@ -1,6 +1,6 @@
 # Binary-Division.github.io
 
-[Preview:](https://ow1omir.github.io/Binary-Division.github.io/\)
+[Preview:](https://ow1omir.github.io/Binary-Division.github.io/)
 
 Сделал деление без восстановления остатка на JavaScript'те
 
