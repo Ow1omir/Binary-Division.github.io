@@ -109,8 +109,18 @@ input:active, :hover, :focus {
     display: none;
     flex-direction: column;
     align-items: center ;
+    transition: 1s;
 }
 
 .display {
     display: flex;
+    transition: 10s;
+}
+
+.line {
+    display: none;
+}
+
+.line-display {
+    display: block;
 }

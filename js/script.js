@@ -1,6 +1,6 @@
 // НЕ СТАВТЕ 2 ПОЖАЛУЙСТА, Я СТАРАЛСЯ
 
-
+const line = document.getElementById('line')
 const countBtn = document.getElementById('countBtn')
 const moreBtn = document.getElementById('moreBtn')
 const resultDisplay = document.getElementById('resultDisplay')
@@ -18,7 +18,7 @@ function division() {
     let firstNumber = Number(document.getElementById('firstNumber').value)
     let secondNumber = Number(document.getElementById('secondNumber').value)
     let intermediateResult = Math.floor(firstNumber / secondNumber)
-    let currentNumber = firstNumber - secondNumber // 12
+    let currentNumber = firstNumber - secondNumber 
     let answer = []
     console.log(firstNumber, secondNumber);
 
@@ -53,14 +53,18 @@ function displayMore() {
     moreLever.reverse()
     console.log(moreLever)
     
+    
     if(moreLever[0] == 0) { 
         moreBlock.classList.remove('display')
         moreBlock.classList.add('more-conteiner')
         moreBtn.classList.remove('moreBtn-active')
+        line.classList.remove('line-display')
+
     } else {
         moreBlock.classList.add('more-conteiner')
         moreBlock.classList.add('display')
-        moreBtn.classList.add('moreBtn-active')
+        moreBtn.classList.add('moreBtn-active')  
+        line.classList.add('line-display')
     }
     
 }

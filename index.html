@@ -11,10 +11,10 @@
     <div class="main-conteiner">
         <div class="values-conteiner">
             <div class="value-input-conteiner">
-                <input class="value-input_item" id="firstNumber" type="text">
+                <input onkeyup="this.value = this.value.replace(/[^\d]/g,'');" class="value-input_item" id="firstNumber" type="text">
             </div>
             <div class="value-input-conteiner">
-                <input class="value-input_item" id="secondNumber" type="text">
+                <input onkeyup="this.value = this.value.replace(/[^\d]/g,'');" class="value-input_item" id="secondNumber" type="text">
             </div>
         </div>
         <div class="btn-conteiner">
@@ -25,7 +25,7 @@
             <h1>Answer:</h1>
             <span class="result" id="resultDisplay">0</span>
         </div>
-        <hr>
+        <hr id="line" class="line">
         <div class="more-conteiner" id="more-conteiner">
             <span><input id="rangeValue" oninput="moreRangeChanger()" type="range" min="1" max="16"  class="more-range"><span id="rangeValueDisplay">10</span></span> 
             <span id="more-result" class="result">0</span>
